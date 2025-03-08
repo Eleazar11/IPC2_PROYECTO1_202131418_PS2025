@@ -26,11 +26,13 @@ import java.sql.SQLIntegrityConstraintViolationException;
 @MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
 public class RegistroServlet extends HttpServlet {
 
+    private static final String UPLOAD_DIR = "C:\\Users\\eleaz\\Desktop\\IPC2-PS-2025\\a.p\\IPC2-A_PROYECTO1_202131418\\imagenes"; // Ruta para subir imágenes
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Crear la conexión a la base de datos
+        // Crear la conexión
         Connection connection = ConexionBaseDeDatos.getConnection();
 
         try {
@@ -44,11 +46,11 @@ public class RegistroServlet extends HttpServlet {
             String nombre = request.getParameter("nombre");
             String username = request.getParameter("username");
             String contrasena = request.getParameter("contrasena");
-            String tipoUsuario = request.getParameter("tipoUsuario").toUpperCase();
+            String tipoUsuario = request.getParameter("tipoUsuario").toLowerCase();
 
             // Verificar si el usuario ya existe
             InsertarUsuario insertarUsuario = new InsertarUsuario(connection);
-            if (insertarUsuario.usuarioExiste(username)) { // Se corrigió: ahora pasa el `username`
+            if (insertarUsuario.usuarioExiste(username)) { // Aquí deberías pasar username en vez de nombre
                 response.sendRedirect(request.getContextPath() + "/usuarioRepetido.jsp");
                 return;
             }
@@ -61,6 +63,11 @@ public class RegistroServlet extends HttpServlet {
                     TipoUsuario.valueOf(tipoUsuario)
             );
 
+            // Insertar el usuario en la base de datos
+            //insertarUsuario.registrarUsuario(usuario);
+
+            // Redirigir a una página de confirmación
+            //response.sendRedirect(request.getContextPath() + "/confirmacion.jsp");
             // Intentar registrar el usuario
             try {
                 insertarUsuario.registrarUsuario(usuario);
@@ -72,6 +79,8 @@ public class RegistroServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             response.sendRedirect(request.getContextPath() + "/error.jsp"); // Página de error genérico
+        } finally {
+            // Cerrar la conexión
         }
     }
 }
