@@ -26,8 +26,6 @@ import java.sql.SQLIntegrityConstraintViolationException;
 @MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
 public class RegistroServlet extends HttpServlet {
 
-    private static final String UPLOAD_DIR = "C:\\Users\\eleaz\\Desktop\\IPC2-PS-2025\\a.p\\IPC2-A_PROYECTO1_202131418\\imagenes"; // Ruta para subir imágenes
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

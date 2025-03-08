@@ -2,6 +2,7 @@ com\mycompany\ipc2_proyecto1\database\InsertarUsuario.class
 com\mycompany\ipc2_proyecto1\TipoUsuario.class
 com\mycompany\ipc2_proyecto1\LogoutServlet.class
 com\mycompany\ipc2_proyecto1\LoginServlet.class
+com\mycompany\ipc2_proyecto1\database\ConsultarUsuario.class
 com\mycompany\ipc2_proyecto1\ObtenerDatosUsuarioServlet.class
 com\mycompany\ipc2_proyecto1\database\ConexionBaseDeDatos.class
 com\mycompany\ipc2_proyecto1\JakartaRestConfiguration.class
