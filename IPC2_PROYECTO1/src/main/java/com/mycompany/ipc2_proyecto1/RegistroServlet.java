@@ -37,7 +37,7 @@ public class RegistroServlet extends HttpServlet {
         try {
             if (connection == null) {
                 System.out.println("No se pudo establecer la conexión a la base de datos.");
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "No se pudo conectar a la base de datos.");
+                response.sendRedirect(request.getContextPath() + "/error.jsp");
                 return;
             }
 
@@ -46,12 +46,12 @@ public class RegistroServlet extends HttpServlet {
             String username = request.getParameter("username");
             String contrasena = request.getParameter("contrasena");
             String tipoUsuario = request.getParameter("tipoUsuario").toLowerCase();
-           
+
             // Verificar si el usuario ya existe
             InsertarUsuario insertarUsuario = new InsertarUsuario(connection);
-            if (insertarUsuario.usuarioExiste(nombre)) {
+            if (insertarUsuario.usuarioExiste(nombre)) { // Aquí deberías pasar username en vez de nombre
                 response.sendRedirect(request.getContextPath() + "/usuarioRepetido.jsp");
-                return; // Salir del método
+                return;
             }
 
             // Crear el objeto usuario
