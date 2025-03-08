@@ -16,6 +16,7 @@ import jakarta.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.SQLIntegrityConstraintViolationException;
 
 /**
  *
@@ -25,13 +26,11 @@ import java.sql.Connection;
 @MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
 public class RegistroServlet extends HttpServlet {
 
-    private static final String UPLOAD_DIR = "C:\\Users\\eleaz\\Desktop\\IPC2-PS-2025\\a.p\\IPC2-A_PROYECTO1_202131418\\imagenes"; // Ruta para subir imágenes
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Crear la conexión
+        // Crear la conexión a la base de datos
         Connection connection = ConexionBaseDeDatos.getConnection();
 
         try {
@@ -45,11 +44,11 @@ public class RegistroServlet extends HttpServlet {
             String nombre = request.getParameter("nombre");
             String username = request.getParameter("username");
             String contrasena = request.getParameter("contrasena");
-            String tipoUsuario = request.getParameter("tipoUsuario").toLowerCase();
+            String tipoUsuario = request.getParameter("tipoUsuario").toUpperCase();
 
             // Verificar si el usuario ya existe
             InsertarUsuario insertarUsuario = new InsertarUsuario(connection);
-            if (insertarUsuario.usuarioExiste(nombre)) { // Aquí deberías pasar username en vez de nombre
+            if (insertarUsuario.usuarioExiste(username)) { // Se corrigió: ahora pasa el `username`
                 response.sendRedirect(request.getContextPath() + "/usuarioRepetido.jsp");
                 return;
             }
@@ -62,17 +61,17 @@ public class RegistroServlet extends HttpServlet {
                     TipoUsuario.valueOf(tipoUsuario)
             );
 
-            // Insertar el usuario en la base de datos
-            insertarUsuario.registrarUsuario(usuario);
-
-            // Redirigir a una página de confirmación
-            response.sendRedirect(request.getContextPath() + "/confirmacion.jsp");
+            // Intentar registrar el usuario
+            try {
+                insertarUsuario.registrarUsuario(usuario);
+                response.sendRedirect(request.getContextPath() + "/confirmacion.jsp"); // Si el registro es exitoso
+            } catch (SQLIntegrityConstraintViolationException e) {
+                response.sendRedirect(request.getContextPath() + "/usuarioRepetido.jsp"); // Usuario duplicado
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al procesar la solicitud.");
-        } finally {
-            // Cerrar la conexión
+            response.sendRedirect(request.getContextPath() + "/error.jsp"); // Página de error genérico
         }
     }
 }
