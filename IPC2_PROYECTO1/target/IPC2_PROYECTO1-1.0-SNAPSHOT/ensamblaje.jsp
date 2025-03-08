@@ -13,5 +13,6 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <a href="LogoutServlet" class="btn btn-primary">Cerrar sesión</a>
     </body>
 </html>
