@@ -49,13 +49,13 @@ public class LoginServlet extends HttpServlet {
                 // Redirigir según el tipo de usuario
                 switch (tipoUsuario) {
                     case "ENSAMBLAJE":
-                        response.sendRedirect("ensamblaje.jsp");
+                        response.sendRedirect("areaEnsamblaje/ensamblajeHome.jsp");
                         break;
                     case "VENTAS":
-                        response.sendRedirect("ventas.jsp");
+                        response.sendRedirect("areaVentas/ventasHome.jsp");
                         break;
                     case "ADMINISTRACION":
-                        response.sendRedirect("administracion.jsp");
+                        response.sendRedirect("areaAdministracion/administracionHome.jsp");
                         break;
                     default:
                         response.sendRedirect("index.jsp"); // En caso de que no haya coincidencia
