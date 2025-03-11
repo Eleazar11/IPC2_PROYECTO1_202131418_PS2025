@@ -40,7 +40,7 @@ public class RegistroComponenteServlet extends HttpServlet {
         try {
             if (connection == null) {
                 System.out.println("No se pudo establecer la conexión a la base de datos.");
-                response.sendRedirect(request.getContextPath() + "/error.jsp");
+                response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/error.jsp");
                 return;
             }
 
@@ -53,7 +53,7 @@ public class RegistroComponenteServlet extends HttpServlet {
             // Verificar si el componente ya existe
             InsertarComponente insertarComponente = new InsertarComponente(connection);
             if (insertarComponente.componenteExiste(nombre)) { // Verificar si el nombre ya existe
-                response.sendRedirect(request.getContextPath() + "/componenteRepetido.jsp");
+                response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/componenteRepetido.jsp");
                 return;
             }
 
@@ -70,14 +70,14 @@ public class RegistroComponenteServlet extends HttpServlet {
             // Intentar registrar el componente
             try {
                 insertarComponente.registrarComponente(componente);
-                response.sendRedirect(request.getContextPath() + "/confirmacionComponente.jsp"); // Si el registro es exitoso
+                response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/confirmacion.jsp"); // Si el registro es exitoso
             } catch (SQLIntegrityConstraintViolationException e) {
-                response.sendRedirect(request.getContextPath() + "/componenteRepetido.jsp"); // Componente duplicado
+                response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/componenteRepetido.jsp"); // Componente duplicado
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-            response.sendRedirect(request.getContextPath() + "/error.jsp"); // Página de error genérico
+            response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/error.jsp"); // Página de error genérico
         } finally {
             // Cerrar la conexión
         }
