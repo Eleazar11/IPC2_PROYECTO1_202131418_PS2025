@@ -5,13 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>pagina 2</h1>
-    </body>
-</html>
+<section class="mt-5">
+    <h1 class="text-center">Página 2</h1>
+    <p class="text-center">Contenido dinámico de la página 2.</p>
+</section>
+

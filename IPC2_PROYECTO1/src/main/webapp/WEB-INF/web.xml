@@ -8,4 +8,14 @@
             30
         </session-timeout>
     </session-config>
+    <servlet>
+    <servlet-name>RegistroComponenteServlet</servlet-name>
+    <servlet-class>com.mycompany.ipc2_proyecto1.servlets.ensamblaje.RegistroComponenteServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RegistroComponenteServlet</servlet-name>
+    <url-pattern>/servlets/ensamblaje/RegistroComponenteServlet</url-pattern>
+</servlet-mapping>
+
 </web-app>

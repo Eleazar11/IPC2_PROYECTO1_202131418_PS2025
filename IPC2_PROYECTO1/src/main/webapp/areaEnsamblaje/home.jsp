@@ -34,7 +34,7 @@
 
 <section class="mt-5 content">
     <h1 class="text-center">Bienvenido a Ensamblaje</h1>
-    <p class="text-center">Explora nuestras páginas para más información.</p>
+    <p class="text-center">Explora nuestros componentes para más información.</p>
     
     <div class="container d-flex justify-content-center">
         <div id="carouselExample" class="carousel slide w-75" data-bs-ride="carousel">

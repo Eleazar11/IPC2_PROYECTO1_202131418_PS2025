@@ -13,6 +13,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ensamblaje</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Asegurar que el body tenga altura completa */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 100% de la altura de la pantalla */
+        }
+
+        /* Hacer que el contenido principal tome todo el espacio disponible */
+        main {
+            flex-grow: 1;
+        }
+
+        /* Asegurar que el footer siempre esté abajo */
+        footer {
+            margin-top: auto;
+        }
+    </style>
 </head>
 
 <body onload="loadPage('home')"> <!-- Carga home.jsp al inicio -->
@@ -29,9 +47,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="loadPage('home')">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="loadPage('pagina1')">Página 1</a>
+
+                    <!-- Dropdown para Página 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Componentes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="loadPage('registroComponentes')">Registrar nuevo componente</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="loadPage('opcion2')">Ver componentes</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="loadPage('opcion3')">Modificar componente</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="loadPage('opcion4')">Eliminar componente</a></li>
+                        </ul>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="loadPage('pagina2')">Página 2</a>
                     </li>
@@ -39,6 +68,7 @@
                         <a class="nav-link" href="#" onclick="loadPage('pagina3')">Página 3</a>
                     </li>
                 </ul>
+
                 <!-- Botón de cierre de sesión -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -74,4 +104,5 @@
 
 </body>
 </html>
+
 
