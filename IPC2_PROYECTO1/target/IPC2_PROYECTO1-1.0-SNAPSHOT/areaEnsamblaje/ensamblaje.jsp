@@ -55,7 +55,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#" onclick="loadPage('registroComponentes')">Registrar nuevo componente</a></li>
-                            <li class="nav-item"><a class="nav-link" href="C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesServlet.java">Registrar Componentes</a></li>
+                            <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesServlet">Registrar Componentes</a></li>
                             <li><a class="dropdown-item" href="#" onclick="loadPage('opcion3')">Modificar componente</a></li>
                             <li><a class="dropdown-item" href="#" onclick="loadPage('opcion4')">Eliminar componente</a></li>
                         </ul>

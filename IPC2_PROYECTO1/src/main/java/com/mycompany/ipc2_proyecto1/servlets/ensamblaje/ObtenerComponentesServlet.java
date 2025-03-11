@@ -5,17 +5,22 @@
 package com.mycompany.ipc2_proyecto1.servlets.ensamblaje;
 
 import com.mycompany.ipc2_proyecto1.database.ConexionBaseDeDatos;
+import com.mycompany.ipc2_proyecto1.database.ensamblaje.CategoriaComponente;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.Componente;
+import com.mycompany.ipc2_proyecto1.database.ensamblaje.InsertarComponente;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.ObtenerComponentes;
+import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
+import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +29,7 @@ import java.util.List;
  * @author eleaz
  */
 @WebServlet(name = "ObtenerComponentesServlet", urlPatterns = {"/ObtenerComponentesServlet"})
+@MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
 public class ObtenerComponentesServlet extends HttpServlet {
 
     private ObtenerComponentes obtenerComponentes;
@@ -38,26 +44,29 @@ public class ObtenerComponentesServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        try {
-            List<Componente> componentes = obtenerComponentes.obtenerTodosLosComponentes();
+//        try {
+//            List<Componente> componentes = obtenerComponentes.obtenerTodosLosComponentes();
+//
+//            // Verificación para asegurar que piezas no sea null
+//            if (componentes == null) {
+//                componentes = new ArrayList<>(); // Asignamos una lista vacía si es null
+//            }
+//
+//            // Depuración: Imprimir piezas
+//            System.out.println("Componentes obtenidos: " + componentes.size() + " componentes");
+//
+//            request.setAttribute("componetes", componentes);
+//            request.setAttribute("success", true); // Agregamos un flag de éxito
+//            request.getRequestDispatcher("piezas.jsp").forward(request, response);
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            request.setAttribute("success", false);
+//            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al obtener las piezas");
+//
+//        }
 
-            // Verificación para asegurar que piezas no sea null
-            if (componentes == null) {
-                componentes = new ArrayList<>(); // Asignamos una lista vacía si es null
-            }
-
-            // Depuración: Imprimir piezas
-            System.out.println("Componentes obtenidos: " + componentes.size() + " componentes");
-
-            request.setAttribute("componetes", componentes);
-            request.setAttribute("success", true); // Agregamos un flag de éxito
-            request.getRequestDispatcher("piezas.jsp").forward(request, response);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            request.setAttribute("success", false);
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al obtener las piezas");
-
-        }
+// solo que nos rediriga
+response.sendRedirect("piezas.jsp");
     }
 }

@@ -20,6 +20,6 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ObtenerComponentesServlet</servlet-name>
-        <url-pattern>/ObtenerComponentesServlet</url-pattern>
+        <url-pattern>/servlets/ensamblaje/ObtenerComponentesServlet</url-pattern>
     </servlet-mapping>
 </web-app>
