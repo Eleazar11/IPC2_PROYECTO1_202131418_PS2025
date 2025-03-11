@@ -44,29 +44,20 @@ public class ObtenerComponentesServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        try {
-//            List<Componente> componentes = obtenerComponentes.obtenerTodosLosComponentes();
-//
-//            // Verificación para asegurar que piezas no sea null
-//            if (componentes == null) {
-//                componentes = new ArrayList<>(); // Asignamos una lista vacía si es null
-//            }
-//
-//            // Depuración: Imprimir piezas
-//            System.out.println("Componentes obtenidos: " + componentes.size() + " componentes");
-//
-//            request.setAttribute("componetes", componentes);
-//            request.setAttribute("success", true); // Agregamos un flag de éxito
-//            request.getRequestDispatcher("piezas.jsp").forward(request, response);
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            request.setAttribute("success", false);
-//            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al obtener las piezas");
-//
-//        }
+        Connection connection = ConexionBaseDeDatos.getConnection();
 
-// solo que nos rediriga
-response.sendRedirect("piezas.jsp");
+        try {
+            ObtenerComponentes obtenerComponentes = new ObtenerComponentes(connection);
+            List<Componente> componentes = obtenerComponentes.obtenerTodosLosComponentes();
+
+            request.setAttribute("componentes", componentes);
+            request.getRequestDispatcher("../../areaEnsamblaje/piezas.jsp").forward(request, response);
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al obtener los componentes.");
+        }
     }
+
 }
+// solo que nos rediriga
+//response.sendRedirect("../../areaEnsamblaje/piezas.jsp");

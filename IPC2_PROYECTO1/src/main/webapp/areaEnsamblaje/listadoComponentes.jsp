@@ -9,8 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Componentes</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Opcional: Agregar tu CSS -->
+    <title>Piezas</title>
 </head>
 <body>
     <h2>Lista de Componentes</h2>
