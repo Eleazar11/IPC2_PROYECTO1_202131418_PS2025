@@ -51,7 +51,7 @@ public class ObtenerComponentesServlet extends HttpServlet {
             List<Componente> componentes = obtenerComponentes.obtenerTodosLosComponentes();
 
             request.setAttribute("componentes", componentes);
-            request.getRequestDispatcher("../../areaEnsamblaje/piezas.jsp").forward(request, response);
+            request.getRequestDispatcher("../../areaEnsamblaje/listadoComponentes.jsp").forward(request, response);
         } catch (Exception e) {
             e.printStackTrace();
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al obtener los componentes.");
