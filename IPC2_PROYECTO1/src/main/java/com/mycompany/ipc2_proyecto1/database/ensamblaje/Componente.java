@@ -53,5 +53,14 @@ public class Componente {
         this.cantidad = cantidad;
     }
     
+        @Override
+    public String toString() {
+        return "Componente{" +
+                "nombre='" + nombre + '\'' +
+                ", categoriaComponente=" + CategoriaComponente +
+                ", precio=" + precio +
+                ", cantidad=" + cantidad +
+                '}';
+    }
     
 }

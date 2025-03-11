@@ -8,6 +8,7 @@ import com.mycompany.ipc2_proyecto1.database.ConexionBaseDeDatos;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.CategoriaComponente;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.Componente;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.InsertarComponente;
+import com.mycompany.ipc2_proyecto1.database.ensamblaje.ObtenerComponentes;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -20,6 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLIntegrityConstraintViolationException;
+import java.util.List;
 
 
 /**
@@ -70,6 +72,15 @@ public class RegistroComponenteServlet extends HttpServlet {
             // Intentar registrar el componente
             try {
                 insertarComponente.registrarComponente(componente);
+                // Verificar si se están leyendo los datos de la base de datos
+                ObtenerComponentes obtenerComponentes = new ObtenerComponentes(connection);
+                List<Componente> componentes = obtenerComponentes.obtenerTodosLosComponentes();
+
+                System.out.println("Lista de componentes en la base de datos:");
+                for (Componente c : componentes) {
+                    System.out.println("Nombre: " + c.getNombre() + ", Categoría: " + c.getCategoriaComponente()
+                            + ", Precio: " + c.getPrecio() + ", Cantidad: " + c.getCantidad());
+                }
                 response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/confirmacion.jsp"); // Si el registro es exitoso
             } catch (SQLIntegrityConstraintViolationException e) {
                 response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/componenteRepetido.jsp"); // Componente duplicado

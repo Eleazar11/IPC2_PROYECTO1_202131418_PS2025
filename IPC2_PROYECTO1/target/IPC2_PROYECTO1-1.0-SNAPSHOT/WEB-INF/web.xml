@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-   version="6.0">
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <servlet>
-    <servlet-name>RegistroComponenteServlet</servlet-name>
-    <servlet-class>com.mycompany.ipc2_proyecto1.servlets.ensamblaje.RegistroComponenteServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-    <servlet-name>RegistroComponenteServlet</servlet-name>
-    <url-pattern>/servlets/ensamblaje/RegistroComponenteServlet</url-pattern>
-</servlet-mapping>
-
+        <servlet-name>RegistroComponenteServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.ensamblaje.RegistroComponenteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerComponentesServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.ensamblaje.ObtenerComponentesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistroComponenteServlet</servlet-name>
+        <url-pattern>/servlets/ensamblaje/RegistroComponenteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerComponentesServlet</servlet-name>
+        <url-pattern>/ObtenerComponentesServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
