@@ -9,6 +9,7 @@ import com.mycompany.ipc2_proyecto1.database.ensamblaje.CategoriaComponente;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.Componente;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.InsertarComponente;
 import com.mycompany.ipc2_proyecto1.database.ensamblaje.ObtenerComponentes;
+import com.mycompany.ipc2_proyecto1.database.ensamblaje.ObtenerTodosLosComponentesFiltros;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -32,24 +33,26 @@ import java.util.List;
 @MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
 public class ObtenerComponentesServlet extends HttpServlet {
 
-    private ObtenerComponentes obtenerComponentes;
+    private ObtenerTodosLosComponentesFiltros obtenerComponentesFiltros;
 
     @Override
     public void init() throws ServletException {
-        // Utilizamos la clase ConexionBaseDeDatos para obtener la conexión
+        // Establecer la conexión y la clase que obtiene los componentes
         Connection connection = ConexionBaseDeDatos.getConnection();
-        // Pasamos la conexión al constructor de ObtenerComponentes
-        this.obtenerComponentes = new ObtenerComponentes(connection);
+        this.obtenerComponentesFiltros = new ObtenerTodosLosComponentesFiltros(connection);
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Connection connection = ConexionBaseDeDatos.getConnection();
+        // Obtener los parámetros del filtro y orden
+        String ordenarPor = request.getParameter("ordenarPor");
+        String orden = request.getParameter("orden");
 
         try {
-            ObtenerComponentes obtenerComponentes = new ObtenerComponentes(connection);
-            List<Componente> componentes = obtenerComponentes.obtenerTodosLosComponentes();
+            // Obtener los componentes con los filtros
+            List<Componente> componentes = obtenerComponentesFiltros.obtenerComponentesConFiltros(ordenarPor, orden);
 
+            // Pasar los componentes al JSP
             request.setAttribute("componentes", componentes);
             request.getRequestDispatcher("../../areaEnsamblaje/listadoComponentes.jsp").forward(request, response);
         } catch (Exception e) {
@@ -57,7 +60,6 @@ public class ObtenerComponentesServlet extends HttpServlet {
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al obtener los componentes.");
         }
     }
-
 }
 // solo que nos rediriga
 //response.sendRedirect("../../areaEnsamblaje/piezas.jsp");

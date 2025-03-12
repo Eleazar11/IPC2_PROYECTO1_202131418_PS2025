@@ -90,6 +90,9 @@
             <section class="mt-5 content">
                 <h2>Lista de Componentes</h2>
 
+                <!-- Formulario para filtros y ordenación -->
+                
+
                 <table class="table table-bordered">
                     <thead class="table-dark">
                         <tr>
