@@ -3,6 +3,7 @@ com\mycompany\ipc2_proyecto1\database\ConsultarUsuario.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\CategoriaComponente.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\EliminarComponente.class
 com\mycompany\ipc2_proyecto1\JakartaRestConfiguration.class
+com\mycompany\ipc2_proyecto1\servlets\administracion\EditarUsuarioServlet.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\ObtenerComponentes.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\ObtenerTodosLosComponentesFiltros.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EliminarComponenteServlet.class
@@ -17,6 +18,7 @@ com\mycompany\ipc2_proyecto1\database\administracion\ObtenerUsuarios.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\InsertarComponente.class
 com\mycompany\ipc2_proyecto1\database\InsertarUsuario.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EditarComponenteServlet.class
+com\mycompany\ipc2_proyecto1\database\administracion\ActualizarUsuario.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\ActualizarComponente.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesServlet.class
 com\mycompany\ipc2_proyecto1\RegistroServlet.class
