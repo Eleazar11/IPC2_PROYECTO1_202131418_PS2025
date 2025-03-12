@@ -7,6 +7,7 @@ com\mycompany\ipc2_proyecto1\database\ensamblaje\ObtenerComponentes.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\ObtenerTodosLosComponentesFiltros.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EliminarComponenteServlet.class
 com\mycompany\ipc2_proyecto1\TipoUsuario.class
+com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosModificarServlet.class
 com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosServlet.class
 com\mycompany\ipc2_proyecto1\LoginServlet.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesModificarServlet.class

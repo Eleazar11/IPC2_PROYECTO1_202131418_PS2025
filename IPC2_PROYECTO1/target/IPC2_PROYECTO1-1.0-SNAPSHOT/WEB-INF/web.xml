@@ -32,6 +32,10 @@
         <servlet-name>ObtenerUsuariosServlet</servlet-name>
         <servlet-class>com.mycompany.ipc2_proyecto1.servlets.administracion.ObtenerUsuariosServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ObtenerUsuariosModificarServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.administracion.ObtenerUsuariosModificarServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistroComponenteServlet</servlet-name>
         <url-pattern>/servlets/ensamblaje/RegistroComponenteServlet</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>ObtenerUsuariosServlet</servlet-name>
         <url-pattern>/servlets/administracion/ObtenerUsuariosServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerUsuariosModificarServlet</servlet-name>
+        <url-pattern>/servlets/administracion/ObtenerUsuariosModificarServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
