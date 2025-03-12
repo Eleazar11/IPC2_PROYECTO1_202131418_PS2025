@@ -33,7 +33,7 @@
     </style>
 </head>
 
-<body onload="loadPage('home')"> <!-- Carga home.jsp al inicio -->
+<body> <!-- Carga home.jsp al inicio -->
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">

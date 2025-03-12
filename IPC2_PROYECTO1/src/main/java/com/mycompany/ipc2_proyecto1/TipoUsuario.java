@@ -12,9 +12,4 @@ public enum TipoUsuario {
     ensamblaje,
     ventas,
     administracion;
-    /*
-    ENSAMBLAJE,
-    VENTAS,
-    ADMINISTRACION;
-    */
 }

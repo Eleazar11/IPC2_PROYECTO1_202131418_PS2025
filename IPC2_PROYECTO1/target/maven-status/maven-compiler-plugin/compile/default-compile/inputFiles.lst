@@ -1,4 +1,5 @@
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\administracion\ModeloComputadora.java
+C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\administracion\ObtenerUsuarios.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\ensamblaje\ActualizarComponente.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EditarComponenteServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\ConexionBaseDeDatos.java
@@ -8,6 +9,7 @@ C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECT
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\ensamblaje\CategoriaComponente.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\LogoutServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\JakartaRestConfiguration.java
+C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\Usuario.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesEliminarServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\ConsultarUsuario.java
