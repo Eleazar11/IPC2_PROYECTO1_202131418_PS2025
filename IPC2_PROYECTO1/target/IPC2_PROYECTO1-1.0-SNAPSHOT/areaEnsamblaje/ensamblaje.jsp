@@ -56,7 +56,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#" onclick="loadPage('registroComponentes')">Registrar nuevo componente</a></li>
                             <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesServlet">Ver Componentes</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="loadPage('opcion3')">Modificar componente</a></li>
+                            <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesModificarServlet"">Modificar componente</a></li>
                             <li><a class="dropdown-item" href="#" onclick="loadPage('opcion4')">Eliminar componente</a></li>
                         </ul>
                     </li>
