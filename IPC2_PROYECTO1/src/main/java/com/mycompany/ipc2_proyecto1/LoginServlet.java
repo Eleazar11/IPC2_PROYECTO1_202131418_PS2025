@@ -52,10 +52,10 @@ public class LoginServlet extends HttpServlet {
                         response.sendRedirect("areaEnsamblaje/ensamblaje.jsp");
                         break;
                     case "VENTAS":
-                        response.sendRedirect("areaVentas/ventasHome.jsp");
+                        response.sendRedirect("areaVentas/ventas.jsp");
                         break;
                     case "ADMINISTRACION":
-                        response.sendRedirect("areaAdministracion/administracionHome.jsp");
+                        response.sendRedirect("areaAdministracion/administracion.jsp");
                         break;
                     default:
                         response.sendRedirect("index.jsp"); // En caso de que no haya coincidencia

@@ -18,3 +18,17 @@ CREATE TABLE componentes (
     precio DECIMAL(10,2) NOT NULL,
     cantidad INT NOT NULL
 );
+
+CREATE TABLE modelos_computadora (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL UNIQUE,
+    cant_procesador INT NOT NULL,
+    cant_ram INT NOT NULL,
+    cant_tarjeta_grafica INT NOT NULL DEFAULT 0,
+    cant_ssd INT NOT NULL DEFAULT 0,
+    precio DECIMAL(10,2) NOT NULL,
+    armada BOOLEAN NOT NULL DEFAULT FALSE,
+    vendida BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+
