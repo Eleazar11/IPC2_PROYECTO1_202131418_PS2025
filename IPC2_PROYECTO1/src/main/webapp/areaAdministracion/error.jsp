@@ -19,6 +19,8 @@
                 display: flex;
                 flex-direction: column;
                 min-height: 100vh; /* 100% de la altura de la pantalla */
+                background: url('https://i.pinimg.com/originals/19/b2/8c/19b28c8372aaec65623f7ee7332e74be.gif') no-repeat center center fixed;
+                background-size: cover;
             }
 
             /* Hacer que el contenido principal tome todo el espacio disponible */
