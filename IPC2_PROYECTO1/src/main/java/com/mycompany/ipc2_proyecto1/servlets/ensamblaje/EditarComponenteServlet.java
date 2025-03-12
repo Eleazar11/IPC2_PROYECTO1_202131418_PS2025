@@ -54,7 +54,7 @@ public class EditarComponenteServlet extends HttpServlet {
             boolean existe = listaComponentes.stream().anyMatch(c -> c.getNombre().equalsIgnoreCase(nombre));
 
             if (!existe) {
-                response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/componenteNoEncontrado.jsp");
+                response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/error.jsp");
                 return;
             }
 
@@ -62,7 +62,7 @@ public class EditarComponenteServlet extends HttpServlet {
             ActualizarComponente actualizarComponente = new ActualizarComponente(connection);
             actualizarComponente.actualizarComponente(nombre, nuevaCategoria, nuevoPrecio, nuevaCantidad);
 
-            response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/confirmacionEdicion.jsp"); // Página de éxito
+            response.sendRedirect(request.getContextPath() + "/areaEnsamblaje/confirmacion.jsp"); // Página de éxito
 
         } catch (Exception e) {
             e.printStackTrace();

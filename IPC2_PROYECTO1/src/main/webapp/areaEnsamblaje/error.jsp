@@ -94,6 +94,7 @@
 
                         <h1 class="mt-3 text-danger">¡Error!</h1>
                         <p class="text-muted">Ha ocurrido un error generico.</p>
+                        <p class="text-muted">intenta de  nuevo y realiza bien las acciones.</p>
 
                         <!-- Botones -->
                         <div class="mt-4">

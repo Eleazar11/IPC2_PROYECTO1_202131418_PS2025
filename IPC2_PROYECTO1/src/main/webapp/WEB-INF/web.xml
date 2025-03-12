@@ -16,6 +16,14 @@
         <servlet-name>EditarComponenteServlet</servlet-name>
         <servlet-class>com.mycompany.ipc2_proyecto1.servlets.ensamblaje.EditarComponenteServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EliminarComponenteServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.ensamblaje.EliminarComponenteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerComponentesEliminarServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.ensamblaje.ObtenerComponentesEliminarServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistroComponenteServlet</servlet-name>
         <url-pattern>/servlets/ensamblaje/RegistroComponenteServlet</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>EditarComponenteServlet</servlet-name>
         <url-pattern>/servlets/ensamblaje/EditarComponenteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarComponenteServlet</servlet-name>
+        <url-pattern>/servlets/ensamblaje/EliminarComponenteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerComponentesEliminarServlet</servlet-name>
+        <url-pattern>/servlets/ensamblaje/ObtenerComponentesEliminarServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>

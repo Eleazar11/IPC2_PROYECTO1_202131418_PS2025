@@ -92,8 +92,9 @@
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM7.032 11.077a.75.75 0 0 1-1.064-.008L4.847 9.561a.75.75 0 0 1 .015-1.062l2.62-2.4a.75.75 0 0 1 1.063.015l3.105 3.317a.75.75 0 0 1-.015 1.062l-4.146 3.85a.75.75 0 0 1-1.062-.016z"/>
                         </svg>
 
-                        <h1 class="mt-3 text-success">¡Componente registrado correctamente!</h1>
-                        <p class="text-muted">El componente se ha registrado exitosamente en la base de datos.</p>
+                        <h1 class="mt-3 text-success">¡Accion Relizada con EXITO!</h1>
+                        <p class="text-muted">La accion para el componente se ha relizado exitosamente.</p>
+                        <p class="text-muted">regresa al home y continua.</p>
 
                         <!-- Botones -->
                         <div class="mt-4">
