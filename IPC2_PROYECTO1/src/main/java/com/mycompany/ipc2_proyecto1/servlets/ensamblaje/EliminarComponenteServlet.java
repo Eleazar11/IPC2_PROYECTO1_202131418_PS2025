@@ -9,6 +9,7 @@ import com.mycompany.ipc2_proyecto1.database.ensamblaje.EliminarComponente;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,6 +21,7 @@ import java.sql.Connection;
  * @author eleaz
  */
 @WebServlet(name = "EliminarComponenteServlet", urlPatterns = {"/EliminarComponenteServlet"})
+@MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
 public class EliminarComponenteServlet extends HttpServlet {
 
     @Override

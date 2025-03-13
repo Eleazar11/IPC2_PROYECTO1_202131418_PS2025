@@ -70,7 +70,7 @@
                                 <li><a class="dropdown-item" href="#" onclick="loadPage('registroModeloComputadora')">Registrar</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraServlet">Ver Lista</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraModificarServlet">Modificar</a></li>
-                                <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraEliminarServlet">Eliminar</a></li>
                             </ul>
                         </li>
 
