@@ -12,6 +12,8 @@ C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECT
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\Usuario.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesEliminarServlet.java
+C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosEliminarServlet.java
+C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\administracion\EliminarUsuarioServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\ConsultarUsuario.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\administracion\RegistroUsuariosAdminServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesServlet.java
@@ -20,6 +22,7 @@ C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECT
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\ensamblaje\ObtenerComponentes.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\administracion\EditarUsuarioServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EliminarComponenteServlet.java
+C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\administracion\EliminarUsuario.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\administracion\InsertarModeloComputadora.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosModificarServlet.java
 C:\Users\eleaz\Desktop\IPC2-PS-2025\IPC2_PROYECTO1_202131418_PS2025\IPC2_PROYECTO1\src\main\java\com\mycompany\ipc2_proyecto1\database\ensamblaje\EliminarComponente.java

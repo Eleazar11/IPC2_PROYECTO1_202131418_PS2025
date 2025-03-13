@@ -58,10 +58,10 @@
                                 Usuarios
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" onclick="loadPage('crearUsuario')">Registrar nuevo usuario</a></li>
-                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesServlet">Ver Lista de Usuarios</a></li>
-                                <li><a class="dropdown-item" href="../../areaAdministracion/administracion.jsp">Modificar Usuario</a></li>
-                                <li><a class="dropdown-item" href="../../areaAdministracion/administracion.jsp">Eliminar Usario</a></li>
+                                <li<a class="dropdown-item" href="../../areaAdministracion/administracion.jsp">Registrar nuevo usuario</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosServlet">Ver Lista de Usuarios</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosModificarServlet">Modificar Usuario</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosEliminarServlet">Eliminar Usario</a></li>
                             </ul>
                         </li>
 
@@ -76,7 +76,7 @@
                     <!-- Botón de cierre de sesión -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="btn btn-danger" href="../LogoutServlet">Cerrar sesión</a>
+                            <a class="btn btn-danger" href="../../LogoutServlet">Cerrar sesión</a>
                         </li>
                     </ul>
                 </div>

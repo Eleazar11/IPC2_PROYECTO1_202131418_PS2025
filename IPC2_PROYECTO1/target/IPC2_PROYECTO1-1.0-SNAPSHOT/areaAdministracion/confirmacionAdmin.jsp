@@ -56,10 +56,10 @@
                                 Usuarios
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" onclick="loadPage('crearUsuario')">Registrar nuevo usuario</a></li>
-                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesServlet">Ver Lista de Usuarios</a></li>
-                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesModificarServlet">Modificar Usuario</a></li>
-                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesEliminarServlet">Eliminar Usario</a></li>
+                                <li<a class="dropdown-item" href="../../areaAdministracion/administracion.jsp">Registrar nuevo usuario</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosServlet">Ver Lista de Usuarios</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosModificarServlet">Modificar Usuario</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosEliminarServlet">Eliminar Usario</a></li>
                             </ul>
                         </li>
 
