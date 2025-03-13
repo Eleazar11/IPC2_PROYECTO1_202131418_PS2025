@@ -52,6 +52,10 @@
         <servlet-name>RegistroModelosComputadoraServlet</servlet-name>
         <servlet-class>com.mycompany.ipc2_proyecto1.servlets.administracion.RegistroModelosComputadoraServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ObtenerModelosComputadoraServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.administracion.ObtenerModelosComputadoraServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistroComponenteServlet</servlet-name>
         <url-pattern>/servlets/ensamblaje/RegistroComponenteServlet</url-pattern>
@@ -103,6 +107,10 @@
     <servlet-mapping>
         <servlet-name>RegistroModelosComputadoraServlet</servlet-name>
         <url-pattern>/servlets/administracion/RegistroModelosComputadoraServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerModelosComputadoraServlet</servlet-name>
+        <url-pattern>/servlets/administracion/ObtenerModelosComputadoraServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>

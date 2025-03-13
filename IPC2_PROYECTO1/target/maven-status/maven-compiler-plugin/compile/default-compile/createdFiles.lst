@@ -11,6 +11,7 @@ com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EliminarComponenteServlet.class
 com\mycompany\ipc2_proyecto1\TipoUsuario.class
 com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosModificarServlet.class
 com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosServlet.class
+com\mycompany\ipc2_proyecto1\database\administracion\ObtenerModelosComputadora.class
 com\mycompany\ipc2_proyecto1\LoginServlet.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesModificarServlet.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\RegistroComponenteServlet.class
@@ -28,6 +29,7 @@ com\mycompany\ipc2_proyecto1\database\ensamblaje\Componente.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\ObtenerComponentesEliminarServlet.class
 com\mycompany\ipc2_proyecto1\resources\JakartaEE10Resource.class
 com\mycompany\ipc2_proyecto1\servlets\administracion\RegistroModelosComputadoraServlet.class
+com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerModelosComputadoraServlet.class
 com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerUsuariosEliminarServlet.class
 com\mycompany\ipc2_proyecto1\LogoutServlet.class
 com\mycompany\ipc2_proyecto1\database\ConexionBaseDeDatos.class
