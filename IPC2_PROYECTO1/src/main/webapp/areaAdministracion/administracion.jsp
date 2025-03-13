@@ -75,7 +75,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="loadPage('pagina3')">Página 3</a>
+                            <a class="nav-link" href="#" onclick="loadPage('home')">Reportes</a>
                         </li>
                     </ul>
 
