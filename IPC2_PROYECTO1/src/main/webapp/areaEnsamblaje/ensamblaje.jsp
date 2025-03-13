@@ -62,10 +62,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="loadPage('pagina2')">Página 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="loadPage('pagina3')">Página 3</a>
+                        <a class="nav-link" href="#" onclick="loadPage('home')">Ensamble Computadoras</a>
                     </li>
                 </ul>
 

@@ -12,6 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Exitoso</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <style>
+    /* Asegurar que el body tenga altura completa */
+    body {
+        background: url('https://64.media.tumblr.com/cca4f06484b447c0687f0325af5b38c9/428a8db1dc8ae92f-87/s1280x1920/7c751558b1d93e15c2d885cff2162ddb95059b8d.gif') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    /* Estilo para el texto */
+    body, p, h1, h2, h3, h4, h5, h6, span {
+        
+        color: white; /* Texto en blanco */
+    }
+        </style>
 </head>
 <body>
     <div class="container mt-5">

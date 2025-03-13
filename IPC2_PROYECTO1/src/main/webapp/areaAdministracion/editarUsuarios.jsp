@@ -64,6 +64,18 @@
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosEliminarServlet">Eliminar Usario</a></li>
                             </ul>
                         </li>
+                        <!-- Dropdown para Modelos Computadora -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="modelosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos Computadora
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="modelosDropdown">
+                                <li><a class="dropdown-item" href="../../areaAdministracion/administracion.jsp" onclick="loadPage('')">Registrar</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraServlet">Ver Lista</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraModificarServlet">Modificar</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraEliminarServlet">Eliminar</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
 
@@ -174,23 +186,23 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        let editarUsuarioModal = document.getElementById('editarUsuarioModal');
-                        editarUsuarioModal.addEventListener('show.bs.modal', function (event) {
-                            let button = event.relatedTarget;
-                            let username = button.getAttribute('data-username');
-                            let nombre = button.getAttribute('data-nombre');
-                            let tipo = button.getAttribute('data-tipo');
+                                    document.addEventListener("DOMContentLoaded", function () {
+                                        let editarUsuarioModal = document.getElementById('editarUsuarioModal');
+                                        editarUsuarioModal.addEventListener('show.bs.modal', function (event) {
+                                            let button = event.relatedTarget;
+                                            let username = button.getAttribute('data-username');
+                                            let nombre = button.getAttribute('data-nombre');
+                                            let tipo = button.getAttribute('data-tipo');
 
-                            let modalUsername = editarUsuarioModal.querySelector('#username');
-                            let modalNombre = editarUsuarioModal.querySelector('#nombre');
-                            let modalTipoUsuario = editarUsuarioModal.querySelector('#tipoUsuario');
+                                            let modalUsername = editarUsuarioModal.querySelector('#username');
+                                            let modalNombre = editarUsuarioModal.querySelector('#nombre');
+                                            let modalTipoUsuario = editarUsuarioModal.querySelector('#tipoUsuario');
 
-                            modalUsername.value = username;
-                            modalNombre.value = nombre;
-                            modalTipoUsuario.value = tipo;
-                        });
-                    });
+                                            modalUsername.value = username;
+                                            modalNombre.value = nombre;
+                                            modalTipoUsuario.value = tipo;
+                                        });
+                                    });
         </script>
 
     </body>

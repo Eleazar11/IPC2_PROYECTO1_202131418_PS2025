@@ -64,6 +64,18 @@
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosEliminarServlet">Eliminar Usario</a></li>
                             </ul>
                         </li>
+                        <!-- Dropdown para Modelos Computadora -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="modelosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos Computadora
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="modelosDropdown">
+                                <li><a class="dropdown-item" href="../../areaAdministracion/administracion.jsp" onclick="loadPage('')">Registrar</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraServlet">Ver Lista</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraModificarServlet">Modificar</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraEliminarServlet">Eliminar</a></li>
+                            </ul>
+                        </li>
 
                        
                     </ul>
