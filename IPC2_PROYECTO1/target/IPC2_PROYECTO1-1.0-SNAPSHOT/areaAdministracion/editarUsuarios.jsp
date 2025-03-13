@@ -58,7 +58,7 @@
                                 Usuarios
                             </a>
                             <ul class="dropdown-menu">
-                                <li<a class="dropdown-item" href="../../areaAdministracion/administracion.jsp">Registrar nuevo usuario</a></li>
+                                <li><a class="dropdown-item" href="../../areaAdministracion/administracion.jsp" onclick="loadPage('')">Registrar nuevo usuario</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosServlet">Ver Lista de Usuarios</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosModificarServlet">Modificar Usuario</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosEliminarServlet">Eliminar Usario</a></li>

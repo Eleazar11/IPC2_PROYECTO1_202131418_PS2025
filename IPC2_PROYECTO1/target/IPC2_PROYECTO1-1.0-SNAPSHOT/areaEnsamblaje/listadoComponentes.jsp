@@ -61,9 +61,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../../areaEnsamblaje/ensamblaje.jsp">Registrar nuevo componente</a></li>
-                                <li><a class="dropdown-item" href="../../areaEnsamblaje/ensamblaje.jsp">Ver componentes</a></li>
-                                <li><a class="dropdown-item" href="../../areaEnsamblaje/ensamblaje.jsp">Modificar componente</a></li>
-                                <li><a class="dropdown-item" href="../../areaEnsamblaje/ensamblaje.jsp">Eliminar componente</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesServlet"">Ver Componentes</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesModificarServlet">Modificar componente</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesEliminarServlet">Eliminar componente</a></li>
                             </ul>
                         </li>
 
@@ -91,7 +91,7 @@
                 <h2>Lista de Componentes</h2>
 
                 <!-- Formulario para filtros y ordenación -->
-                
+
 
                 <table class="table table-bordered">
                     <thead class="table-dark">

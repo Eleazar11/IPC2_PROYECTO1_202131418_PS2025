@@ -57,9 +57,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="ensamblaje.jsp">Registrar nuevo componente</a></li>
-                                <li><a class="dropdown-item" href="ensamblaje.jsp">Ver componentes</a></li>
-                                <li><a class="dropdown-item" href="ensamblaje.jsp">Modificar componente</a></li>
-                                <li><a class="dropdown-item" href="ensamblaje.jsp">Eliminar componente</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesServlet"">Ver Componentes</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesModificarServlet">Modificar componente</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/ensamblaje/ObtenerComponentesEliminarServlet">Eliminar componente</a></li>
                             </ul>
                         </li>
 
@@ -89,7 +89,7 @@
                     <div class="card-body text-center">
                         <!-- Ícono de éxito -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM7.032 11.077a.75.75 0 0 1-1.064-.008L4.847 9.561a.75.75 0 0 1 .015-1.062l2.62-2.4a.75.75 0 0 1 1.063.015l3.105 3.317a.75.75 0 0 1-.015 1.062l-4.146 3.85a.75.75 0 0 1-1.062-.016z"/>
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM7.032 11.077a.75.75 0 0 1-1.064-.008L4.847 9.561a.75.75 0 0 1 .015-1.062l2.62-2.4a.75.75 0 0 1 1.063.015l3.105 3.317a.75.75 0 0 1-.015 1.062l-4.146 3.85a.75.75 0 0 1-1.062-.016z"/>
                         </svg>
 
                         <h1 class="mt-3 text-success">¡Accion Relizada con EXITO!</h1>
