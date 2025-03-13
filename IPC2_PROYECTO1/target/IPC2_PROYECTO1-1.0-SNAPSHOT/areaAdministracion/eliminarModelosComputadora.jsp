@@ -151,13 +151,15 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                                     <form action="EliminarModeloComputadoraServlet" method="post">
-                                        <input type="hidden" name="idModelo" value="<%= modelo.getId()%>">
+                                        <!-- Cambié idModelo a nombre -->
+                                        <input type="hidden" name="nombre" value="<%= modelo.getNombre()%>">
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                     <%
                         }
