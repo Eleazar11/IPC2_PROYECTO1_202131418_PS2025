@@ -67,7 +67,7 @@
                                 Modelos Computadora
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="modelosDropdown">
-                                <li><a class="dropdown-item" href="#" onclick="loadPage('')">Registrar</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="loadPage('registroModeloComputadora')">Registrar</a></li>
                                 <li><a class="dropdown-item" href="#">Ver Lista</a></li>
                                 <li><a class="dropdown-item" href="#">Modificar</a></li>
                                 <li><a class="dropdown-item" href="#">Eliminar</a></li>
