@@ -69,7 +69,7 @@
                             <ul class="dropdown-menu" aria-labelledby="modelosDropdown">
                                 <li><a class="dropdown-item" href="#" onclick="loadPage('registroModeloComputadora')">Registrar</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraServlet">Ver Lista</a></li>
-                                <li><a class="dropdown-item" href="#">Modificar</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerModelosComputadoraModificarServlet">Modificar</a></li>
                                 <li><a class="dropdown-item" href="#">Eliminar</a></li>
                             </ul>
                         </li>

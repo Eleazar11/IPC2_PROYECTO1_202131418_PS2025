@@ -6,6 +6,7 @@ com\mycompany\ipc2_proyecto1\database\ensamblaje\EliminarComponente.class
 com\mycompany\ipc2_proyecto1\JakartaRestConfiguration.class
 com\mycompany\ipc2_proyecto1\servlets\administracion\EditarUsuarioServlet.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\ObtenerComponentes.class
+com\mycompany\ipc2_proyecto1\servlets\administracion\EditarModeloComputadoraServlet.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\ObtenerTodosLosComponentesFiltros.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EliminarComponenteServlet.class
 com\mycompany\ipc2_proyecto1\TipoUsuario.class
@@ -20,6 +21,7 @@ com\mycompany\ipc2_proyecto1\database\administracion\ModeloComputadora.class
 com\mycompany\ipc2_proyecto1\database\administracion\ObtenerUsuarios.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\InsertarComponente.class
 com\mycompany\ipc2_proyecto1\database\InsertarUsuario.class
+com\mycompany\ipc2_proyecto1\servlets\administracion\ObtenerModelosComputadoraModificarServlet.class
 com\mycompany\ipc2_proyecto1\servlets\ensamblaje\EditarComponenteServlet.class
 com\mycompany\ipc2_proyecto1\database\administracion\ActualizarUsuario.class
 com\mycompany\ipc2_proyecto1\database\ensamblaje\ActualizarComponente.class
@@ -35,3 +37,4 @@ com\mycompany\ipc2_proyecto1\LogoutServlet.class
 com\mycompany\ipc2_proyecto1\database\ConexionBaseDeDatos.class
 com\mycompany\ipc2_proyecto1\Usuario.class
 com\mycompany\ipc2_proyecto1\servlets\administracion\RegistroUsuariosAdminServlet.class
+com\mycompany\ipc2_proyecto1\database\administracion\ActualizarModeloComputadora.class

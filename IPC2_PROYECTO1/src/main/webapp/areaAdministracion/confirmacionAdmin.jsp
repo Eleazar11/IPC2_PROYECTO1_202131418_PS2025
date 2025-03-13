@@ -63,12 +63,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="loadPage('pagina2')">Registrar Nuevo Modelo Computadora</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="loadPage('pagina3')">Página 3</a>
-                        </li>
+                        
                     </ul>
 
                     <!-- Botón de cierre de sesión -->

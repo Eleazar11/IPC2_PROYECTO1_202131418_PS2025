@@ -56,6 +56,14 @@
         <servlet-name>ObtenerModelosComputadoraServlet</servlet-name>
         <servlet-class>com.mycompany.ipc2_proyecto1.servlets.administracion.ObtenerModelosComputadoraServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ObtenerModelosComputadoraModificarServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.administracion.ObtenerModelosComputadoraModificarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditarModeloComputadoraServlet</servlet-name>
+        <servlet-class>com.mycompany.ipc2_proyecto1.servlets.administracion.EditarModeloComputadoraServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistroComponenteServlet</servlet-name>
         <url-pattern>/servlets/ensamblaje/RegistroComponenteServlet</url-pattern>
@@ -111,6 +119,14 @@
     <servlet-mapping>
         <servlet-name>ObtenerModelosComputadoraServlet</servlet-name>
         <url-pattern>/servlets/administracion/ObtenerModelosComputadoraServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerModelosComputadoraModificarServlet</servlet-name>
+        <url-pattern>/servlets/administracion/ObtenerModelosComputadoraModificarServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarModeloComputadoraServlet</servlet-name>
+        <url-pattern>/servlets/administracion/EditarModeloComputadoraServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>

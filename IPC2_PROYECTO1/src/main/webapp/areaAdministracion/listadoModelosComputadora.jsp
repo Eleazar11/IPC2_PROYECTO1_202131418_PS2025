@@ -21,6 +21,8 @@
                 display: flex;
                 flex-direction: column;
                 min-height: 100vh; /* 100% de la altura de la pantalla */
+                background: url('https://i.pinimg.com/originals/19/b2/8c/19b28c8372aaec65623f7ee7332e74be.gif') no-repeat center center fixed;
+                background-size: cover;
             }
 
             /* Hacer que el contenido principal tome todo el espacio disponible */
@@ -47,7 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="loadPage('home')">Inicio</a>
+                            <a class="nav-link" href="../../areaAdministracion/administracion.jsp">Inicio</a>
                         </li>
 
                         <!-- Dropdown para Usuarios -->
@@ -151,7 +153,7 @@
             © 2025 Administracion. Todos los derechos reservados.
         </footer>
 
-        
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
