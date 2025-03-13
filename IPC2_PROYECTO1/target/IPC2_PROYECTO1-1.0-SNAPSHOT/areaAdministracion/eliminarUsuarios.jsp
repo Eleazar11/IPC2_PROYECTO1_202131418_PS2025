@@ -65,12 +65,6 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../areaAdministracion/administracion.jsp">Registrar Nuevo Modelo Computadora</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../areaAdministracion/administracion.jsp">Página 3</a>
-                        </li>
                     </ul>
 
                     <!-- Botón de cierre de sesión -->

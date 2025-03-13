@@ -48,22 +48,32 @@
                             <a class="nav-link" href="#" onclick="loadPage('home')">Inicio</a>
                         </li>
 
-                        <!-- Dropdown para Página 1 -->
+                        <!-- Dropdown para Usuarios -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="usuariosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Usuarios
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" aria-labelledby="usuariosDropdown">
                                 <li><a class="dropdown-item" href="#" onclick="loadPage('crearUsuario')">Registrar nuevo usuario</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosServlet">Ver Lista de Usuarios</a></li>
                                 <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosModificarServlet">Modificar Usuario</a></li>
-                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosEliminarServlet">Eliminar Usario</a></li>
+                                <li><a class="dropdown-item" href="${pageContext.servletContext.contextPath}/servlets/administracion/ObtenerUsuariosEliminarServlet">Eliminar Usuario</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="loadPage('pagina2')">Registrar Nuevo Modelo Computadora</a>
+                        <!-- Dropdown para Modelos Computadora -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="modelosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos Computadora
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="modelosDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="loadPage('')">Registrar</a></li>
+                                <li><a class="dropdown-item" href="#">Ver Lista</a></li>
+                                <li><a class="dropdown-item" href="#">Modificar</a></li>
+                                <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#" onclick="loadPage('pagina3')">Página 3</a>
                         </li>
@@ -76,7 +86,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </nav>
 
         <!-- Contenido dinámico -->
